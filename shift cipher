@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+void enc_shift_cipher(){
+  string message;
+  cin>>message;  
+  srand(time(0));
+  int key=rand()%26;
+  //move each bit by key times
+  string cipher;
+  for(int i=0;i<message.length();i++){
+    message[i]=(message[i]-97+key)%26 +97; //65 for caps 
+  }
+  cout<<"cipher message using key:"<<key<<" is "<< message;
+  //decrypting message with key known:
+  for(int i=0;i<message.length();i++){
+    message[i]=(message[i]-97-key)%26 +97; //65 for caps 
+  }
+  cout<<"cipher message using key:"<<key<<" is "<< message;
+}
+int main() {
+    enc_shift_cipher();  //only small letters
+}
