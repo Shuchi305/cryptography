@@ -1,8 +1,7 @@
 # cryptography
-all source code of this course
 
 
-various types of cyptographic algorithms will be discussed
+Various types of cyptographic algorithms will be discussed
 -shift cipher
 -affine cipher
 -substitution cipher
@@ -10,6 +9,6 @@ various types of cyptographic algorithms will be discussed
 -hill cipher
 -permutation cipher
 
-points to be discussed:
+Points to be discussed:
 -key generation, encyption, decryption
 -cryptanalysis
